@@ -2,7 +2,7 @@ h1 {
     @font-family: 'Rozha One',
     serif;
     font-weight: 100;
-    font-size: 50px;
+    font-size: 70px;
 
 }
 
@@ -228,7 +228,7 @@ nav a:hover::before {
         padding-top: 30px;
     }
 }
-}
+
 
 #overskrift {
     margin: 0;

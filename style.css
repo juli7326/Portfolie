@@ -48,7 +48,10 @@ main img {
 
 
 
-.container {}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
 
 header {
     background: #ecf8ec;
