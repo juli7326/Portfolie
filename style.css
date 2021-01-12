@@ -134,6 +134,7 @@ nav a:hover::before {
 /*MenuNav*/
 @media only screen and (min-width: 600px) {
 
+
     html {
         font-size: 20px;
     }
@@ -235,8 +236,21 @@ nav a:hover::before {
 }
 
 @media only screen and (max-width: 600px) {
+    #splash {
+        visibility: hidden;
+    }
 
-
+    #splash1 {
+        max-width: none;
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-image: url(fotos/port6.jpg);
+        background-size: cover;
+        background-position: 55% 10%;
+        margin-top: 40px;
+    }
 
     * {
         margin: 0;
