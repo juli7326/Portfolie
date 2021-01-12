@@ -2,7 +2,7 @@ h1 {
     @font-family: 'Rozha One',
     serif;
     font-weight: 100;
-    font-size: 100;
+    font-size: 70px;
 
 }
 
@@ -125,8 +125,8 @@ main img {
 }
 
 #mood .section_wrapper .col_left .image {
-    height: 414.55;
-    width: 570;
+    height: 414.55px;
+    width: 570px;
 }
 
 
@@ -337,7 +337,7 @@ p {
         justify-content: center;
         align-items: center;
         border-radius: 20% 0 0 60%;
-        transition: right .8s cubic-bezier(1.0.0.1)
+        transition: right .8s cubic-bezier(1.0, 0.0, 0.0, 1.0)
     }
 
     .change {

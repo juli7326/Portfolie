@@ -154,7 +154,7 @@ nav a:hover::before {
         justify-content: center;
         align-items: center;
         border-radius: 20% 0 0 60%;
-        transition: right .8s cubic-bezier(1.0.0.1)
+        transition: right .8s cubic-bezier(1.0, 0.0, 0.0, 1.0)
     }
 
     .change {

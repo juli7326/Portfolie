@@ -2,7 +2,7 @@ h1 {
     @font-family: 'Rozha One',
     serif;
     font-weight: 100;
-    font-size: 100;
+    font-size: 50px;
 
 }
 
@@ -129,7 +129,7 @@ nav a:hover::before {
         justify-content: center;
         align-items: center;
         border-radius: 20% 0 0 60%;
-        transition: right .8s cubic-bezier(1.0.0.1)
+        transition: right .8s cubic-bezier(1.0, 0.0, 0.0, 1.0)
     }
 
     .change {
@@ -219,6 +219,15 @@ nav a:hover::before {
     .nav_link:hover::after {
         transform: scaleX(1);
     }
+
+    main {
+        margin: 10px;
+    }
+
+    .section_wrapper {
+        padding-top: 30px;
+    }
+}
 }
 
 #overskrift {
@@ -242,8 +251,8 @@ main img {
 }
 
 #mood .section_wrapper .col_left .image {
-    height: 414.55;
-    width: 570;
+    height: 414.55vh;
+    width: 570vh;
 }
 
 
