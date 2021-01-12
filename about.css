@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+}
+
+
+
+main {
+    background-color: #ecf8ec;
+
+}
+
+main img {
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'moon';
+    src: url(fonts/Moon_Light.otf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+p {
+    font-family: moon;
+    font-weight: 100;
+
+}
+
+/*Menunav*/
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #ecf8ec;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding: 5px 0;
+
+
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 40px;
+    position: relative;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 300ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+
+
+/*Menunav*/
+
+@media only screen and (min-width: 600px) {
+    #info .section_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 40px;
+        border-radius: 25px;
+
+        padding: 20px;
+        margin-top: 40px;
+        margin: 50px;
+    }
+
+    #info .section_wrapper .col_left {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        outline-style: inset;
+        outline-color: rgba(157, 163, 154, 0.68);
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
+
+    #info .section_wrapper .col_right {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    body {}
+
+    .container {
+        width: 100%;
+        height: 100vh;
+        background: #ecf8ec;
+    }
+
+    .navbar {
+        width: 300px;
+        height: 100%;
+        background-color: #262626;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20% 0 0 60%;
+        transition: right .8s cubic-bezier(1.0.0.1)
+    }
+
+    .change {
+        right: 0;
+    }
+
+    .hamburger_menu {
+        width: 35px;
+        height: 30px;
+
+        position: fixed;
+        top: 50px;
+        right: 50px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .line {
+        width: 100%;
+        height: 3px;
+        background-color: chocolate;
+        transition: all 0.8s;
+
+    }
+
+    .change .line1 {
+        transform: rotateZ(-405deg) translate(-8px, 6px);
+    }
+
+    .change .line2 {
+        opacity: 0;
+    }
+
+    .change .line3 {
+        transform: rotateZ(405deg) translate(-8px, -6px);
+    }
+
+    .nav_list {
+        text-align: right;
+    }
+
+    .nav_item {
+        list-style: none;
+        margin: 25px;
+    }
+
+    .nav_link {
+        text-decoration: none;
+        font-size: 22px;
+        color: #eee;
+
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        position: relative;
+        padding: 3px 0;
+
+    }
+
+    .nav_link::before {}
+
+    .nav_link::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: chocolate;
+        position: absolute;
+        left: 0;
+        transform: scaleX(0);
+        transition: transform .5s;
+
+    }
+
+    .nav_link::after {
+        bottom: 0;
+        transform-origin: right;
+    }
+
+    .nav_link::before {
+        top: 0;
+        transform-origin: left;
+    }
+
+    .nav_link:hover::before {}
+
+    .nav_link:hover::after {
+        transform: scaleX(1);
+    }
+}
+
+#info .section_wrapper {
+    margin: 10px;
+}
